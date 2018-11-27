@@ -122,6 +122,7 @@ var decryptedText = privateKey.decrypt(forge.util.decode64(encryptedText), 'RSA-
 console.log("dectypted text:" + decryptedText);
 ```
 you can use rsa encrypt in postman now!
+![example](example.png)
 ## something else
 ### about web server
 if you don't want to use a web server, you an simply create a globle varible named `forgeJS` and copy content in `forge.js` to the value(**postman may be very slow because the file is big**)
