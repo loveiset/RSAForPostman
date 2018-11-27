@@ -58,11 +58,14 @@ npm run build
 then  in `dist` folder, we'll find a file named `forge.js`, that's what we need.
 ## how to use it
 because Postman can not load js file from local disk, so we put `forge.js` on a web server(**url on github seems not work, a local server may works or add a varible `forgeJS` manully**).
+
+**EDIT: using github raw format works, so you guys can using this example directly**
+
 ### pre-script
 ```
 //download forgeJS from web and set varible
 if(!pm.globals.has("forgeJS")){
-        pm.sendRequest("https://github.com/loveiset/RSAForPostman/blob/master/forge.js", function (err, res) {
+        pm.sendRequest("https://raw.githubusercontent.com/loveiset/RSAForPostman/master/forge.js", function (err, res) {
         if (err) {
             console.log(err);}
         else {
