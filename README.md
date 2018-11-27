@@ -1,5 +1,7 @@
 # RSAForPostman
 
+## usage
+you can skip following setting steps, and using example code(pre-script) directly to test a RSA encrypt (see how to use it)
 ## reference
 this project is based on [forge Project](https://github.com/digitalbazaar/forge)
 ## how to build
